@@ -63,8 +63,3 @@ with open('output.txt', 'w+') as f: # write matching content lines to outputf
         lineStr = makeString(line)
         f.write(lineStr)
 
-#matching = re.findall(patPara, html, flags=re.M|re.DOTALL)
-#matching = list(filter(None, matching))
-#matching = [re.findall(patPara, str, flags=re.DOTALL) for str in htmlList]
-#print("Type 'matching': " + str(type(matching)))
-#matching = [re.sub(patSkip, "", str, flags=re.DOTALL) for str in matching]
