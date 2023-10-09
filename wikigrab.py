@@ -6,6 +6,7 @@
 
 import urllib.request, urllib.error
 import re
+import os
 
 url = 'https://en.wikipedia.org/wiki/'
 
@@ -74,6 +75,7 @@ try:
             lineStr = makeString(line)
             f.write(lineStr)
     print("* Scraped HTML Data saved to ./output.txt")
+    os.system('open output.txt')
 
 except urllib.error.HTTPError as e: 
     print(e)
